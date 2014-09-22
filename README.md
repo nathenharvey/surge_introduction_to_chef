@@ -2,6 +2,12 @@
 
 Chef is an automation platform that transforms infrastructure into code. This is a hands-on tutorial that will cover the basics that everyone needs to know about how to use Chef for system and infrastructure management. We’ll discuss the server API, the code primitives, and the tools required to successfully use Chef.
 
+## Logistics
+
+This session will rum from 10AM to 5PM with a break for lunch.  Lunch is not served as part of the session but there are a number of locations nearby.
+
+This session will be held in the Eastern Shore II conference room.
+
 ### Prerequisites
 * Watch [Overview of Chef](http://learn.getchef.com/fundamentals-series/week-1/) (45 minutes) on [learnchef.com](http://learnchef.com)
 * Complete the [Workstation Requirements](#workstation-requirements), listed below
