@@ -4,7 +4,7 @@ Chef is an automation platform that transforms infrastructure into code. This is
 
 ### Pre-requisites
 * Watch [Overview of Chef](http://learn.getchef.com/fundamentals-series/week-1/) (45 minutes) on [learnchef.com](http://learnchef.com)
-* Complete the Workstation Requirements, listed below
+* Complete the [Workstation Requirements](#workstation-requirements), listed below
 * Comfort with a command-line text editor such as [vim](http://www.openvim.com/tutorial.html), [emacs](http://www.gnu.org/software/emacs/tour/), or [nano](http://www.howtogeek.com/howto/42980/the-beginners-guide-to-nano-the-linux-command-line-text-editor/)
 
 * Have a question you want addressed?  
@@ -47,3 +47,13 @@ Though we might make use of these in the class, you'll probably want them afterw
 * [Virtual Box](https://www.virtualbox.org/)
 
 It is also a good idea to have [Git](http://git-scm.com/) installed.
+
+
+## What questions can I answer for you?
+
+* Add questions via pull requests to the [student_questions](student_questions.md) page.
+* Contact me on twitter:  [@nathenharvey](http://twitter.com/nathenharvey)
+* Email me [nharvey@getchef.com](mailto:nharvey@getchef.com)
+
+
+* Wondering about those red suspenders?  Check out [DevOps:  No Horse Sh**](https://www.youtube.com/watch?v=0P0HD5pE-zU) and all will be revealed ;)
