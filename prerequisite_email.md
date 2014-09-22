@@ -18,7 +18,7 @@ We're going to try out some new material and introduce you to Chef and to testin
 * Install
   * ChefDK (http://downloads.getchef.com/chef-dk) 0.2.2+
   * SSH/SCP (OpenSSH, puTTY/WinSCP or equivalent)
-  * Programer’s text editor ([Atom](https://atom.io/), Vi/Vim, Emacs, [Sublime Text](http://www.sublimetext.com/), or equivalent)
+  * Programmer’s text editor ([Atom](https://atom.io/), Vi/Vim, Emacs, [Sublime Text](http://www.sublimetext.com/), or equivalent)
 * Check [the prerequisites on GitHub](https://github.com/nathenharvey/surge_introduction_to_chef) for the full list of things you should do to prepare.
 
 **What questions can I answer for you?**

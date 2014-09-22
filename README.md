@@ -39,7 +39,7 @@ Attendees should install the following required software before the workshop sta
 
 - ChefDK (http://downloads.getchef.com/chef-dk) 0.2.2+
 - SSH/SCP (OpenSSH, puTTY/WinSCP or equivalent)
-- Programer’s text editor ([Atom](https://atom.io/), Vi/Vim, Emacs, [Sublime Text](http://www.sublimetext.com/), or equivalent)
+- Programmer’s text editor ([Atom](https://atom.io/), Vi/Vim, Emacs, [Sublime Text](http://www.sublimetext.com/), or equivalent)
 
 **Note for Ruby Developers**
 
