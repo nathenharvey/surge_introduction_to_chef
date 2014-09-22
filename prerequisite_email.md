@@ -8,7 +8,7 @@ We're going to try out some new material and introduce you to Chef and to testin
 
 [Review the prerequisites](https://github.com/nathenharvey/surge_introduction_to_chef) on GitHub to make sure your ready to go.  
 
-The most important prerequisites:
+**The most important prerequisites**
 
 * Watch [Overview of Chef](http://learn.getchef.com/fundamentals-series/week-1/) (45 minutes) on [learnchef.com](http://learnchef.com)
 * Bring wifi-enabled laptop to the workshop, either
