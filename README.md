@@ -2,6 +2,13 @@
 
 Chef is an automation platform that transforms infrastructure into code. This is a hands-on tutorial that will cover the basics that everyone needs to know about how to use Chef for system and infrastructure management. We’ll discuss the server API, the code primitives, and the tools required to successfully use Chef.
 
+## Video Streams
+
+We live-streamed this session using a Google Hangout.  Quality is OK but check out these videos if you'd like to watch and listen to the class.
+
+* [Part 1](https://www.youtube.com/watch?v=43DWeZoNxoM)
+* [Part 2](https://www.youtube.com/watch?v=kCN7eqUuV-g)
+
 ## Logistics
 
 This session will rum from 10AM to 5PM with a break for lunch.  Lunch is not served as part of the session but there are a number of locations nearby.
