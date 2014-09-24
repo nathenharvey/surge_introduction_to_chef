@@ -53,7 +53,6 @@
 |Blue|Hearts|8|54.210.51.185
 |Blue|Hearts|9|54.210.51.24
 |Blue|Spades|2|54.210.12.152
-|Blue|Spades|3|54.165.145.120
 |Blue|Spades|4|54.210.51.119
 |Blue|Spades|5|54.210.51.121
 |Blue|Spades|6|54.209.241.6
