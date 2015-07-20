@@ -1,4 +1,4 @@
-# Introduction to Chef - Surge 2014
+# Introduction to Chef - Surge 2015
 
 Chef is an automation platform that transforms infrastructure into code. This is a hands-on tutorial that will cover the basics that everyone needs to know about how to use Chef for system and infrastructure management. We’ll discuss the server API, the code primitives, and the tools required to successfully use Chef.
 
