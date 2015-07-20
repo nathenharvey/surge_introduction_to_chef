@@ -2,27 +2,18 @@
 
 Chef is an automation platform that transforms infrastructure into code. This is a hands-on tutorial that will cover the basics that everyone needs to know about how to use Chef for system and infrastructure management. We’ll discuss the server API, the code primitives, and the tools required to successfully use Chef.
 
-## Video Streams
-
-We live-streamed this session using a Google Hangout.  Quality is OK but check out these videos if you'd like to watch and listen to the class.
-
-* [Part 1](https://www.youtube.com/watch?v=43DWeZoNxoM)
-* [Part 2](https://www.youtube.com/watch?v=kCN7eqUuV-g)
-
 ## Logistics
 
 This session will rum from 10AM to 5PM with a break for lunch.  Lunch is not served as part of the session but there are a number of locations nearby.
 
-This session will be held in the Eastern Shore II conference room.
-
 ### Prerequisites
-* Watch [Overview of Chef](http://learn.getchef.com/fundamentals-series/week-1/) (45 minutes) on [learnchef.com](http://learnchef.com)
+* Watch [Overview of Chef](https://learn.chef.io/skills/fundamentals-series-week-1/) (45 minutes) on [learn.chef.io](http://learn.chef.io)
 * Complete the [Workstation Requirements](#workstation-requirements), listed below
 * Comfort with a command-line text editor such as [vim](http://www.openvim.com/tutorial.html), [emacs](http://www.gnu.org/software/emacs/tour/), or [nano](http://www.howtogeek.com/howto/42980/the-beginners-guide-to-nano-the-linux-command-line-text-editor/)
 
 * Have a question you want addressed?  
   * Add it to the [student_questions.md](student_questions.md) file and submit a pull request
-  * Or, email [Nathen](mailto:nharvey@getchef.com) in advance
+  * Or, email [Nathen](mailto:nharvey@chef.io) in advance
 
 #### Nice to haves
 
@@ -44,7 +35,7 @@ Attendees should bring a wifi-enabled laptop to the workshop. The following oper
 
 Attendees should install the following required software before the workshop starts.
 
-- ChefDK (http://downloads.getchef.com/chef-dk) 0.2.2+
+- ChefDK (http://downloads.chef.io/chef-dk) 0.6.2+
 - SSH/SCP (OpenSSH, puTTY/WinSCP or equivalent)
 - Programmer’s text editor ([Atom](https://atom.io/), Vi/Vim, Emacs, [Sublime Text](http://www.sublimetext.com/), or equivalent)
 
@@ -54,7 +45,7 @@ If you're currently using rvm, rbenv, chruby, or some other Ruby version manager
 
 #### Nice to haves
 
-Though we might make use of these in the class, you'll probably want them afterwards
+Though we probably will not make use of these in the class, you will likely want them afterwards:
 
 * [Vagrant](https://www.vagrantup.com/)
 * [Virtual Box](https://www.virtualbox.org/)
@@ -66,7 +57,12 @@ It is also a good idea to have [Git](http://git-scm.com/) installed.
 
 * Add questions via pull requests to the [student_questions](student_questions.md) page.
 * Contact me on twitter:  [@nathenharvey](http://twitter.com/nathenharvey)
-* Email me [nharvey@getchef.com](mailto:nharvey@getchef.com)
+* Email me [nharvey@chef.io](mailto:nharvey@chef.io)
 
 
 * Wondering about those red suspenders?  Check out [DevOps:  No Horse Sh**](https://www.youtube.com/watch?v=0P0HD5pE-zU) and all will be revealed ;)
+
+
+## Looking for Surge 2014?
+
+The content and code from the Intro to Chef course offered at Surge 2014 can be found in the [surge-2014 branch of this repository](https://github.com/nathenharvey/surge_introduction_to_chef/tree/surge-2014).
