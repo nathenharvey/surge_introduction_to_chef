@@ -1,2 +1,9 @@
 extra-nodes
 nathen-nodes
+.bash_logout
+.bashrc
+.cache/
+.gitconfig
+.profile
+.ssh/
+.viminfo
