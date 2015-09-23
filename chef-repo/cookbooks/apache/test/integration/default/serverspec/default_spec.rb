@@ -16,7 +16,7 @@ describe 'apache::default' do
   end
 
   it 'home page says hello' do
-    expect(command('curl http://localhost').stdout).to contain /hello/i
+    expect(command('curl http://localhost').stdout).to contain /world/i
   end
 
 

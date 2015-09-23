@@ -16,5 +16,25 @@ describe 'apache::default' do
     it 'converges successfully' do
       expect { chef_run }.to_not raise_error
     end
+
+    it 'installs apache' do
+      expect(chef_run).to install_package 'apache2'
+    end
+
+    it 'starts apache' do
+      expect(chef_run).to start_service 'apache2'
+    end
+
+    it 'enables apache to start on reboot' do
+      expect(chef_run).to enable_service 'apache2'
+    end
+
+
+
+
+
+
+
+
   end
 end

@@ -6,9 +6,18 @@
 package 'apache2'
 
 service 'apache2' do
-  action :start
+  action [:start, :enable]
 end
 
-file '/var/www/html/index.html' do
-  content 'HeLlO'
+#service 'apache2' do
+#  action :enable 
+#end
+
+template '/var/www/html/index.html' do
+  source 'index.html.erb'
 end
+
+
+
+
+
