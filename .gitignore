@@ -8,3 +8,4 @@ nathen-nodes
 .ssh/
 .viminfo
 .bash_history
+chef-repo/nodes
