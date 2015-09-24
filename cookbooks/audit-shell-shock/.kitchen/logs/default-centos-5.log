@@ -1,0 +1,116 @@
+I, [2015-09-23T20:27:51.628325 #26870]  INFO -- default-centos-5: -----> Converging <default-centos-5>...
+W, [2015-09-23T20:27:51.628907 #26870]  WARN -- default-centos-5: Running legacy converge for 'Docker' Driver
+I, [2015-09-23T20:27:51.629181 #26870]  INFO -- default-centos-5: Preparing files for transfer
+I, [2015-09-23T20:27:51.629336 #26870]  INFO -- default-centos-5: Preparing dna.json
+I, [2015-09-23T20:27:51.629726 #26870]  INFO -- default-centos-5: Preparing current project directory as a cookbook
+I, [2015-09-23T20:27:51.630444 #26870]  INFO -- default-centos-5: Removing non-cookbook files before transfer
+I, [2015-09-23T20:27:51.631049 #26870]  INFO -- default-centos-5: Preparing validation.pem
+I, [2015-09-23T20:27:51.631339 #26870]  INFO -- default-centos-5: Preparing client.rb
+I, [2015-09-23T20:27:51.770814 #26870]  INFO -- default-centos-5: -----> Chef Omnibus installation detected (install only if missing)
+I, [2015-09-23T20:27:51.802632 #26870]  INFO -- default-centos-5: Transferring files to <default-centos-5>
+I, [2015-09-23T20:27:53.151905 #26870]  INFO -- default-centos-5: Starting Chef Client, version 12.4.2
+I, [2015-09-23T20:27:53.948156 #26870]  INFO -- default-centos-5: [2015-09-23T20:27:53+00:00] WARN: Child with name 'dna.json' found in multiple directories: /tmp/kitchen/dna.json and /tmp/kitchen/dna.json
+I, [2015-09-23T20:27:53.964183 #26870]  INFO -- default-centos-5: resolving cookbooks for run list: ["audit-shell-shock::default"]
+I, [2015-09-23T20:27:53.978008 #26870]  INFO -- default-centos-5: Synchronizing Cookbooks:
+I, [2015-09-23T20:27:53.979983 #26870]  INFO -- default-centos-5:   - audit-shell-shock
+I, [2015-09-23T20:27:53.981012 #26870]  INFO -- default-centos-5: Compiling Cookbooks...
+I, [2015-09-23T20:27:53.982468 #26870]  INFO -- default-centos-5: Converging 0 resources
+I, [2015-09-23T20:27:53.992774 #26870]  INFO -- default-centos-5: Starting audit phase
+I, [2015-09-23T20:27:54.609939 #26870]  INFO -- default-centos-5: 
+I, [2015-09-23T20:27:54.610690 #26870]  INFO -- default-centos-5: Shell Shock
+I, [2015-09-23T20:27:54.611340 #26870]  INFO -- default-centos-5:   CVE-2014-6271
+I, [2015-09-23T20:27:54.612017 #26870]  INFO -- default-centos-5:     is remediated (FAILED - 1)
+I, [2015-09-23T20:27:54.612690 #26870]  INFO -- default-centos-5:   CVE-2014-6277
+I, [2015-09-23T20:27:54.613397 #26870]  INFO -- default-centos-5:     is remediated (FAILED - 2)
+I, [2015-09-23T20:27:54.613983 #26870]  INFO -- default-centos-5:   CVE-2014-6278
+I, [2015-09-23T20:27:54.614637 #26870]  INFO -- default-centos-5:     is remediated (FAILED - 3)
+I, [2015-09-23T20:27:54.615291 #26870]  INFO -- default-centos-5:   CVE-2014-7169
+I, [2015-09-23T20:27:54.615958 #26870]  INFO -- default-centos-5:     is remediated
+I, [2015-09-23T20:27:54.616735 #26870]  INFO -- default-centos-5:   CVE-2014-7186
+I, [2015-09-23T20:27:54.617416 #26870]  INFO -- default-centos-5:     is remediated (FAILED - 4)
+I, [2015-09-23T20:27:54.618696 #26870]  INFO -- default-centos-5:   CVE-2014-7187
+I, [2015-09-23T20:27:54.619591 #26870]  INFO -- default-centos-5:     is remediated (FAILED - 5)
+I, [2015-09-23T20:27:54.620423 #26870]  INFO -- default-centos-5: 
+I, [2015-09-23T20:27:54.621319 #26870]  INFO -- default-centos-5: Failures:
+I, [2015-09-23T20:27:54.621908 #26870]  INFO -- default-centos-5: 
+I, [2015-09-23T20:27:54.622937 #26870]  INFO -- default-centos-5:   1) Shell Shock CVE-2014-6271 is remediated
+I, [2015-09-23T20:27:54.623997 #26870]  INFO -- default-centos-5:      Failure/Error: expect(command("env x='() { :;}; echo vulnerable' bash -c \"echo this is a test\"").stdout).not_to contain(/vulnerable/)
+I, [2015-09-23T20:27:54.625376 #26870]  INFO -- default-centos-5: expected "vulnerable\nthis is a test\n" not to contain /vulnerable/
+I, [2015-09-23T20:27:54.625906 #26870]  INFO -- default-centos-5:      # /tmp/kitchen/cache/cookbooks/audit-shell-shock/recipes/default.rb:9:in `block (3 levels) in from_file'
+I, [2015-09-23T20:27:54.626855 #26870]  INFO -- default-centos-5: 
+I, [2015-09-23T20:27:54.627394 #26870]  INFO -- default-centos-5:   2) Shell Shock CVE-2014-6277 is remediated
+I, [2015-09-23T20:27:54.628766 #26870]  INFO -- default-centos-5:      Failure/Error: expect(command("bash -c \"f() { x() { _;}; x() { _;} <<a; }\" 2>/dev/null || echo vulnerable").stdout).not_to contain(/vulnerable/)
+I, [2015-09-23T20:27:54.629264 #26870]  INFO -- default-centos-5: expected "vulnerable\n" not to contain /vulnerable/
+I, [2015-09-23T20:27:54.630066 #26870]  INFO -- default-centos-5:      # /tmp/kitchen/cache/cookbooks/audit-shell-shock/recipes/default.rb:15:in `block (3 levels) in from_file'
+I, [2015-09-23T20:27:54.630626 #26870]  INFO -- default-centos-5: 
+I, [2015-09-23T20:27:54.630924 #26870]  INFO -- default-centos-5:   3) Shell Shock CVE-2014-6278 is remediated
+I, [2015-09-23T20:27:54.632265 #26870]  INFO -- default-centos-5:      Failure/Error: expect(command("shellshocker='() { echo You are vulnerable; }' bash -c shellshocker").exit_status).not_to eq 0
+I, [2015-09-23T20:27:54.633274 #26870]  INFO -- default-centos-5: 
+I, [2015-09-23T20:27:54.635889 #26870]  INFO -- default-centos-5: expected: value != 0
+I, [2015-09-23T20:27:54.636169 #26870]  INFO -- default-centos-5:      got: 0
+I, [2015-09-23T20:27:54.636441 #26870]  INFO -- default-centos-5: 
+I, [2015-09-23T20:27:54.636726 #26870]  INFO -- default-centos-5: (compared using ==)
+I, [2015-09-23T20:27:54.636986 #26870]  INFO -- default-centos-5:      # /tmp/kitchen/cache/cookbooks/audit-shell-shock/recipes/default.rb:21:in `block (3 levels) in from_file'
+I, [2015-09-23T20:27:54.637155 #26870]  INFO -- default-centos-5: 
+I, [2015-09-23T20:27:54.637392 #26870]  INFO -- default-centos-5:   4) Shell Shock CVE-2014-7186 is remediated
+I, [2015-09-23T20:27:54.637644 #26870]  INFO -- default-centos-5:      Failure/Error: expect(command("bash -c 'true <<EOF <<EOF <<EOF <<EOF <<EOF <<EOF <<EOF <<EOF <<EOF <<EOF <<EOF <<EOF <<EOF <<EOF' ||
+I, [2015-09-23T20:27:54.637882 #26870]  INFO -- default-centos-5: expected "CVE-2014-7186 vulnerable, redir_stack\n" not to contain /CVE-2014-7186 vulnerable, redir_stack/
+I, [2015-09-23T20:27:54.639795 #26870]  INFO -- default-centos-5:      # /tmp/kitchen/cache/cookbooks/audit-shell-shock/recipes/default.rb:33:in `block (3 levels) in from_file'
+I, [2015-09-23T20:27:54.639960 #26870]  INFO -- default-centos-5: 
+I, [2015-09-23T20:27:54.640194 #26870]  INFO -- default-centos-5:   5) Shell Shock CVE-2014-7187 is remediated
+I, [2015-09-23T20:27:54.640450 #26870]  INFO -- default-centos-5:      Failure/Error: expect(command("(for x in {1..200} ; do echo \"for x$x in ; do :\"; done; for x in {1..200} ; do echo done ; done) | bash ||
+I, [2015-09-23T20:27:54.640691 #26870]  INFO -- default-centos-5: expected "CVE-2014-7187 vulnerable, word_lineno\n" not to contain /CVE-2014-7187 vulnerable, word_lineno/
+I, [2015-09-23T20:27:54.640940 #26870]  INFO -- default-centos-5:      # /tmp/kitchen/cache/cookbooks/audit-shell-shock/recipes/default.rb:40:in `block (3 levels) in from_file'
+I, [2015-09-23T20:27:54.641116 #26870]  INFO -- default-centos-5: 
+I, [2015-09-23T20:27:54.641338 #26870]  INFO -- default-centos-5: Finished in 0.31351 seconds (files took 0.29733 seconds to load)
+I, [2015-09-23T20:27:54.641569 #26870]  INFO -- default-centos-5: 6 examples, 5 failures
+I, [2015-09-23T20:27:54.647728 #26870]  INFO -- default-centos-5: 
+I, [2015-09-23T20:27:54.647979 #26870]  INFO -- default-centos-5: Failed examples:
+I, [2015-09-23T20:27:54.648146 #26870]  INFO -- default-centos-5: 
+I, [2015-09-23T20:27:54.648409 #26870]  INFO -- default-centos-5: rspec /tmp/kitchen/cache/cookbooks/audit-shell-shock/recipes/default.rb[1:1:1] # Shell Shock CVE-2014-6271 is remediated
+I, [2015-09-23T20:27:54.648658 #26870]  INFO -- default-centos-5: rspec /tmp/kitchen/cache/cookbooks/audit-shell-shock/recipes/default.rb[1:2:1] # Shell Shock CVE-2014-6277 is remediated
+I, [2015-09-23T20:27:54.648893 #26870]  INFO -- default-centos-5: rspec /tmp/kitchen/cache/cookbooks/audit-shell-shock/recipes/default.rb[1:3:1] # Shell Shock CVE-2014-6278 is remediated
+I, [2015-09-23T20:27:54.649139 #26870]  INFO -- default-centos-5: rspec /tmp/kitchen/cache/cookbooks/audit-shell-shock/recipes/default.rb[1:5:1] # Shell Shock CVE-2014-7186 is remediated
+I, [2015-09-23T20:27:54.649400 #26870]  INFO -- default-centos-5: rspec /tmp/kitchen/cache/cookbooks/audit-shell-shock/recipes/default.rb[1:6:1] # Shell Shock CVE-2014-7187 is remediated
+I, [2015-09-23T20:27:54.649568 #26870]  INFO -- default-centos-5: 
+I, [2015-09-23T20:27:54.649802 #26870]  INFO -- default-centos-5: Audit phase exception:
+I, [2015-09-23T20:27:54.650116 #26870]  INFO -- default-centos-5:   Audit phase found failures - 5/6 controls failed
+I, [2015-09-23T20:27:54.650370 #26870]  INFO -- default-centos-5:   
+I, [2015-09-23T20:27:54.650656 #26870]  INFO -- default-centos-5:   Running handlers:
+I, [2015-09-23T20:27:54.650960 #26870]  INFO -- default-centos-5:   Running handlers complete
+I, [2015-09-23T20:27:54.651272 #26870]  INFO -- default-centos-5:   Chef Client finished, 0/0 resources updated in 1.496947481 seconds
+I, [2015-09-23T20:27:54.651614 #26870]  INFO -- default-centos-5:     1/6 controls succeeded
+I, [2015-09-23T20:27:54.667841 #26870]  INFO -- default-centos-5: [2015-09-23T20:27:54+00:00] FATAL: Stacktrace dumped to /tmp/kitchen/cache/chef-stacktrace.out
+I, [2015-09-23T20:27:54.668727 #26870]  INFO -- default-centos-5: [2015-09-23T20:27:54+00:00] ERROR: Found 1 errors, they are stored in the backtrace
+I, [2015-09-23T20:27:55.128321 #26870]  INFO -- default-centos-5: [2015-09-23T20:27:55+00:00] FATAL: Chef::Exceptions::ChildConvergeError: Chef run process exited unsuccessfully (exit code 1)
+E, [2015-09-23T20:27:55.161136 #26870] ERROR -- default-centos-5: Converge failed on instance <default-centos-5>.
+E, [2015-09-23T20:27:55.161249 #26870] ERROR -- default-centos-5: ------Exception-------
+E, [2015-09-23T20:27:55.161277 #26870] ERROR -- default-centos-5: Class: Kitchen::ActionFailed
+E, [2015-09-23T20:27:55.161298 #26870] ERROR -- default-centos-5: Message: SSH exited (1) for command: [sh -c '
+
+sudo -E /opt/chef/bin/chef-client --local-mode --config /tmp/kitchen/client.rb --log_level auto --force-formatter --no-color --json-attributes /tmp/kitchen/dna.json --chef-zero-port 8889
+']
+E, [2015-09-23T20:27:55.161319 #26870] ERROR -- default-centos-5: ---Nested Exception---
+E, [2015-09-23T20:27:55.161338 #26870] ERROR -- default-centos-5: Class: Kitchen::Transport::SshFailed
+E, [2015-09-23T20:27:55.161357 #26870] ERROR -- default-centos-5: Message: SSH exited (1) for command: [sh -c '
+
+sudo -E /opt/chef/bin/chef-client --local-mode --config /tmp/kitchen/client.rb --log_level auto --force-formatter --no-color --json-attributes /tmp/kitchen/dna.json --chef-zero-port 8889
+']
+E, [2015-09-23T20:27:55.161394 #26870] ERROR -- default-centos-5: ------Backtrace-------
+E, [2015-09-23T20:27:55.161414 #26870] ERROR -- default-centos-5: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/ssh_base.rb:85:in `rescue in converge'
+E, [2015-09-23T20:27:55.161434 #26870] ERROR -- default-centos-5: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/ssh_base.rb:88:in `converge'
+E, [2015-09-23T20:27:55.161453 #26870] ERROR -- default-centos-5: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:540:in `legacy_ssh_base_converge'
+E, [2015-09-23T20:27:55.161473 #26870] ERROR -- default-centos-5: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:364:in `block in converge_action'
+E, [2015-09-23T20:27:55.161492 #26870] ERROR -- default-centos-5: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:488:in `call'
+E, [2015-09-23T20:27:55.161531 #26870] ERROR -- default-centos-5: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:488:in `synchronize_or_call'
+E, [2015-09-23T20:27:55.161551 #26870] ERROR -- default-centos-5: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:453:in `block in action'
+E, [2015-09-23T20:27:55.161584 #26870] ERROR -- default-centos-5: /opt/chefdk/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2015-09-23T20:27:55.161606 #26870] ERROR -- default-centos-5: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:452:in `action'
+E, [2015-09-23T20:27:55.161646 #26870] ERROR -- default-centos-5: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:362:in `converge_action'
+E, [2015-09-23T20:27:55.161668 #26870] ERROR -- default-centos-5: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:341:in `block in transition_to'
+E, [2015-09-23T20:27:55.161688 #26870] ERROR -- default-centos-5: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:340:in `each'
+E, [2015-09-23T20:27:55.161707 #26870] ERROR -- default-centos-5: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:340:in `transition_to'
+E, [2015-09-23T20:27:55.161726 #26870] ERROR -- default-centos-5: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:138:in `converge'
+E, [2015-09-23T20:27:55.161745 #26870] ERROR -- default-centos-5: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:176:in `public_send'
+E, [2015-09-23T20:27:55.161764 #26870] ERROR -- default-centos-5: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2015-09-23T20:27:55.161783 #26870] ERROR -- default-centos-5: ----------------------

@@ -1,0 +1,7 @@
+---
+ssh_key: "/home/chef/cookbooks/audit-shell-shock/.kitchen/docker_id_rsa"
+image_id: 8ffcd4f187ab
+container_id: dd615098a7798018721ca860994a15ddddfc452f413767e8859b66598e156067
+hostname: localhost
+port: 32768
+last_action: create

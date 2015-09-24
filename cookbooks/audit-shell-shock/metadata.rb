@@ -1,0 +1,7 @@
+name 'audit-shell-shock'
+maintainer 'The Authors'
+maintainer_email 'you@example.com'
+license 'all_rights'
+description 'Installs/Configures audit-shell-shock'
+long_description 'Installs/Configures audit-shell-shock'
+version '0.1.0'
